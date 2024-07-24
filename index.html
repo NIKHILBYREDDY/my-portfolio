@@ -23,7 +23,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Nikhil Venkat Sai Reddy Byreddy</div>
+      <div class="logo">My Portfolio</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -40,7 +40,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic-1.jpg" alt="Nikhil byreddy profile picture" />
+        <img src="./assets/hero-img.png" alt="Nikhil byreddy profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -93,7 +93,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>1.5+ years <br />Full stack Development,Machine learning,Data engineering</p>
+              <p>1.5+ years <br /><b>Full stack Development,Machine learning,Data engineering</b></p>
             </div>
             <div class="details-container">
               <img
@@ -102,7 +102,7 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>Masters Degree(M.S)-Computer Science,Texas Tech University(Lubbock,Texas)<br />Bachelors Degree(B.E)-Information Technology(Hyderabad,India)</p>
+              <p>Masters Degree(M.S)-Computer Science,<br/><b>Texas Tech University</b>(Lubbock,Texas)<br />Expected graduation: <b>May 2025</b> <br/>Bachelors Degree(B.E)-Information Technology(Hyderabad,India)</p>
             </div>
           </div>
           <div class="text-container">
@@ -381,10 +381,7 @@
               </div>
             </div>
           </div>
-        
-
-
-      <img
+              <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
@@ -482,31 +479,33 @@
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
           <p><a href="mailto:byreddynikhil29@gmail.com">byreddynikhil29@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
           <p><a href="https://www.linkedin.com/in/nikhilvs-byreddy/">LinkedIn</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/phone-icon.jpg"
-            alt="phone-icon"
-            class="icon contact-icon"
-          />
-          <p>+1 8064517395</a></p>
+          <img src="./assets/phone-icon.jpg" alt="Phone icon" class="icon contact-icon" />
+          <p>+1 8064517395</p>
         </div>
       </div>
+      <form action="/.netlify/functions/contact" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit" class="btn btn-color-1">Send Message</button>
+      </form>
+      
     </section>
+    
     <footer>
       <nav>
         <div class="nav-links-container">
